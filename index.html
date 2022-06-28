@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./vue.js"></script>
     <title>Homepage Instagram</title>
 </head>
 <style>
@@ -51,8 +50,8 @@ body{
                 <div class="perfil-foto">
                     <img src="./img/perfil-instagram.jpg" alt="Foto do perfil">
                 </div>
-                <a href="#" @click.prevent class="insta-login">Continue como wellingtonFJr</a>
-                <a href="#" @click.prevent class="insta-remover">Remover Conta</a>
+                <a href="#" class="insta-login">Continue como wellingtonFJr</a>
+                <a href="#" class="insta-remover">Remover Conta</a>
             </div>
 
             <div class="group">
@@ -67,22 +66,15 @@ body{
             <div class="baixe-o-app">
                 <p class="baixe">Baixe o aplicativo</p>
                 <d class="download">
-                    <a href="#" @click.prevent class="app-download"></a>
-                    <a href="#" @click.prevent class="app-download"></a>
+                    <a href="#" class="app-download"></a>
+                    <a href="#" class="app-download"></a>
                 </d>
             </div>
 
         </div>
     </div>
 
-    <script>
-        const vm = new Vue({
-            el: ".instagram-wrapper",
-            data: {
-                teste: 1011230
-            }
-        })
-    </script>
+ 
 </body>
 
 </html>
