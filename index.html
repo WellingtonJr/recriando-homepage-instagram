@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./vue.js"></script>
+    <title>Homepage Instagram</title>
+</head>
+<style>
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(243, 243, 243);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.instagram-wrapper{
+    display: flex;
+   
+    align-items: center;  /* alinhamento vertical */
+    justify-content: start;  /* alinhamento horizontal */
+}
+
+
+</style>
+
+<body>
+
+    <div class="instagram-wrapper">
+        <div class="instagram-phone">
+            <img src="./img/instagram-celular.png" alt="Instagram Celular Imagem">
+        </div>
+        <div class="instagram-form">
+            <div class="group">
+                <img src="./img/instagram-logo.png" alt="Logotipo Instagram" class="insta-logo">
+                <div class="perfil-foto">
+                    <img src="./img/perfil-instagram.jpg" alt="Foto do perfil">
+                </div>
+                <a href="#" @click.prevent class="insta-login">Continue como wellingtonFJr</a>
+                <a href="#" @click.prevent class="insta-remover">Remover Conta</a>
+            </div>
+
+            <div class="group">
+                <p class="not-account">Não é wellingtonFJr?</p>
+                <p class="notaccount">
+                    <span class="link-blue">Alternar contas</span>
+                    ou
+                    <sp class="link-blue">Inscreva-se</sp>
+                </p>
+            </div>
+
+            <div class="baixe-o-app">
+                <p class="baixe">Baixe o aplicativo</p>
+                <d class="download">
+                    <a href="#" @click.prevent class="app-download"></a>
+                    <a href="#" @click.prevent class="app-download"></a>
+                </d>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        const vm = new Vue({
+            el: ".instagram-wrapper",
+            data: {
+                teste: 1011230
+            }
+        })
+    </script>
+</body>
+
+</html>
